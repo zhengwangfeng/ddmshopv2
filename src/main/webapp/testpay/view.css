@@ -1,0 +1,68 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 16px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+	padding-right:10px;
+	
+}
+
+.clearfix {
+	clear: both;
+}
+
+ul {
+	list-style: none;
+}
+
+.print_container {
+	padding: 20px;
+	width: 188px;
+}
+
+.section1 {
+	
+}
+
+.section2 label {
+	display: block;
+}
+
+.section3 label {
+	display: block;
+}
+
+.section4 {
+	
+}
+.welcome{
+	font-size: 16px;
+}
+.section4 .total label {
+	display: block;
+}
+
+.section4 .other_fee {
+	border-bottom: 1px solid #DADADA;
+}
+.section5 label {
+	display: block;
+}
+.section4 table label {
+	ffont-size: 10px;
+}

@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script language="javascript" src="LodopFuncs.js"></script>
+<object id="LODOP_OB" classid="clsid:2105C259-1E0C-4534-8141-A753534CB4CA" width=0 height=0>
+<embed id="LODOP_EM" type="application/x-print-lodop" width=0 height=0></embed>
+</object>
+</head>
+<body>
+<div id="div3">
+<table border="1" width="100%" height=120px cellspacing=0 style=" margin:0px auto">
+
+<tr align="center">
+<th colspan=5 style="height:50px;font-size:25px">
+<img src="mmt.png" style="height:60px;width:100px;float:left; margin-left:20px" />
+<div style="margin-top:20px"> <b> 铭明电子成品标签</b> </div>
+</th>
+</tr>
+
+<tr>
+<th>
+品 名
+</th>
+<th colspan="3" style="height:40px">
+<span style="float:left"> 510主板20S</span>
+</th>
+</tr>
+<tr>
+<th>
+型 号
+</th>
+<th colspan="3" style="height: 60px">
+<span style="float:left"> </span>
+</th>
+</tr>
+<tr>
+<th>
+批 次
+</th>
+<th colspan="3" style="height:60px">
+<span style="float:left"> </span>
+</th>
+</tr>
+<tr>
+<th style="height:40px">
+数 量
+</th>
+<th>
+<span>100</span> <span style="margin-left:20px">PCS</span>
+</th>
+<th>
+检验人
+</th>
+<th>
+0111
+</th>
+</tr>
+<tr style="height:40px">
+<th style="width: 260px">序号</th>
+<th style="width: 260px">产品名称</th>
+<th style="width: 260px">L/N</th>
+
+<th style="width: 260px">领用数量</th>
+<th style="width: 260px">点数</th>
+</tr>
+<tr style="height:30px">
+<th style="width: 260px">1</th>
+<th style="width: 260px">第二张sssssssssssssssssssssssssss</th>
+<th style="width:260px">第三张ssssssssssssssssssssssssssss</th>
+<td style="width: 260px">第一张</td>
+<td style="width:200px">第二张</td>
+
+</tr>
+
+ 
+
+
+</table>
+</div>
+<button onclick=print_view()>打印预览</button>
+<button onclick=print()>打印</button>
+<button onclick=print_setup()>打印维护</button>
+<button onclick=print_design()>打印设计</button>
+</body>
+<script type="text/javascript">
+// var LODOP = getLodop(document.getElementById('LODOP_OB'), document.getElementById('LODOP_EM'));
+var LODOP = getLodop();
+
+function createPrintPage() {
+
+// 固定数据
+
+LODOP.PRINT_INITA(-8, -7, 406, 295, "");
+LODOP.SET_PRINT_PAGESIZE(1, 700, 400, "CreateCustomPage");
+LODOP.SET_PRINT_STYLE("FontSize", 11);
+var a =[1,2,3] ;
+
+//总数
+for (var i = 0; i < 3; i++) {
+分页打印 控制 每一页多少份
+for (var j = 0; j < a[i]; j++) {
+
+//要改变的数据 分页
+
+LODOP.ADD_PRINT_RECT(12, 7, "68mm", "37.99mm", 0, 1);
+LODOP.ADD_PRINT_RECT(39, 7, "68mm", "6.51mm", 0, 1);
+LODOP.ADD_PRINT_RECT(98, 7, 257, 35, 0, 1);
+LODOP.ADD_PRINT_RECT(39, 7, 77, 117, 0, 1);
+LODOP.ADD_PRINT_TEXT(19, 82, 119, 15, "铭明电子物料标签");
+LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
+LODOP.ADD_PRINT_TEXT(43, 14, 69, 15, "物料名称");
+LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
+LODOP.ADD_PRINT_TEXT(77, 15, 68, 15, "MMT编号");
+LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
+LODOP.ADD_PRINT_TEXT(111, 10, 68, 15, " 批 号");
+LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
+LODOP.ADD_PRINT_TEXT(136, 11, 68, 15, " 数 量");
+LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
+LODOP.ADD_PRINT_TEXT(45, 97, 150, 15, "Mcc-T2-140912" + a[i]);
+LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
+LODOP.ADD_PRINT_TEXT(137, 103, 96, 15, "200");
+LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
+LODOP.ADD_PRINT_TEXT(65, 97, 151, 12, "Yj00130" + a[i]);
+LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
+LODOP.ADD_PRINT_TEXT(101, 90, 166, 12, "G0201YJ01301502201");
+LODOP.SET_PRINT_STYLEA(0, "FontSize", 9);
+LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
+LODOP.ADD_PRINT_BARCODE(80, 87, 166, 17, "128Auto", "G0201YJ01301502201");
+LODOP.SET_PRINT_STYLEA(0, "FontSize", 0);
+LODOP.SET_PRINT_STYLEA(0, "ShowBarText", 0);
+LODOP.ADD_PRINT_BARCODE(114, 87, 166, 17, "128Auto", "G0201YJ01301502201");
+LODOP.SET_PRINT_STYLEA(0, "FontSize", 0);
+LODOP.SET_PRINT_STYLEA(0, "ShowBarText", 0);
+LODOP.ADD_PRINT_TEXT(158, 130, 100, 14, "200");
+LODOP.NewPageA();//分页
+
+
+}
+
+}
+//LODOP.PREVIEW();打印预览
+
+}
+//打印预览
+function print_view() {
+createPrintPage();
+ LODOP.PREVIEW();
+}
+
+// 打印方法：
+function print() {
+createPrintPage();
+LODOP.PRINT();
+}
+
+//打印维护：
+function print_setup() {
+createPrintPage();
+LODOP.PRINT_SETUP();
+}
+
+// 打印设计：
+function print_design() {
+createPrintPage();
+LODOP.PRINT_DESIGN();
+}
+</script>
+</html>
